@@ -1,0 +1,46 @@
+2012-07-31 10:13:54,903 INFO Starting new HTTP connection (1): edo.91office.com
+2012-07-31 10:13:54,959 DEBUG "MKCOL /files/mailbox/users.pyhunterpig HTTP/1.1" 405 123
+2012-07-31 10:13:54,975 ERROR save2edo [users.pyhunterpig] error: Traceback (most recent call last):
+  File "/mnt/workspace/pyhunterpig/i91office/apps/gmailapp/util.py", line 27, in save2edo
+    mailbox.mkdir(filedir)
+  File "/usr/local/lib/python2.7/dist-packages/easywebdav-1.0.2-py2.7.egg/easywebdav/client.py", line 68, in mkdir
+    self._send('MKCOL', path, expected_codes)
+  File "/usr/local/lib/python2.7/dist-packages/easywebdav-1.0.2-py2.7.egg/easywebdav/client.py", line 48, in _send
+    raise OperationFailed(method, path, expected_code, response.status_code)
+OperationFailed: Failed to create directory "users.pyhunterpig".
+  Operation     :  MKCOL users.pyhunterpig
+  Expected code :  201 Created
+  Actual code   :  405 Method Not Allowed
+
+2012-07-31 10:13:54,976 INFO Starting new HTTP connection (2): edo.91office.com
+2012-07-31 10:13:55,025 DEBUG "MKCOL /files/mailbox/users.pyhunterpig/Inbox HTTP/1.1" 405 123
+2012-07-31 10:13:55,026 ERROR save2edo [users.pyhunterpig] error: Traceback (most recent call last):
+  File "/mnt/workspace/pyhunterpig/i91office/apps/gmailapp/util.py", line 27, in save2edo
+    mailbox.mkdir(filedir)
+  File "/usr/local/lib/python2.7/dist-packages/easywebdav-1.0.2-py2.7.egg/easywebdav/client.py", line 68, in mkdir
+    self._send('MKCOL', path, expected_codes)
+  File "/usr/local/lib/python2.7/dist-packages/easywebdav-1.0.2-py2.7.egg/easywebdav/client.py", line 48, in _send
+    raise OperationFailed(method, path, expected_code, response.status_code)
+OperationFailed: Failed to create directory "Inbox".
+  Operation     :  MKCOL Inbox
+  Expected code :  201 Created
+  Actual code   :  405 Method Not Allowed
+
+2012-07-31 10:13:55,026 INFO Starting new HTTP connection (3): edo.91office.com
+2012-07-31 10:13:55,072 DEBUG "MKCOL /files/mailbox/users.pyhunterpig/Inbox/6734 HTTP/1.1" 405 123
+2012-07-31 10:13:55,072 ERROR save2edo [users.pyhunterpig] error: Traceback (most recent call last):
+  File "/mnt/workspace/pyhunterpig/i91office/apps/gmailapp/util.py", line 27, in save2edo
+    mailbox.mkdir(filedir)
+  File "/usr/local/lib/python2.7/dist-packages/easywebdav-1.0.2-py2.7.egg/easywebdav/client.py", line 68, in mkdir
+    self._send('MKCOL', path, expected_codes)
+  File "/usr/local/lib/python2.7/dist-packages/easywebdav-1.0.2-py2.7.egg/easywebdav/client.py", line 48, in _send
+    raise OperationFailed(method, path, expected_code, response.status_code)
+OperationFailed: Failed to create directory "6734".
+  Operation     :  MKCOL 6734
+  Expected code :  201 Created
+  Actual code   :  405 Method Not Allowed
+
+2012-07-31 10:13:55,073 INFO Starting new HTTP connection (4): edo.91office.com
+2012-07-31 10:13:55,300 DEBUG "PUT /files/mailbox/users.pyhunterpig/Inbox/6734/%E5%8F%97%E8%AE%BF%E9%A1%B5%E9%9D%A2_20120729-20120729.zip HTTP/1.1" 201 0
+2012-07-31 10:13:55,301 INFO Starting new HTTP connection (5): edo.91office.com
+2012-07-31 10:13:57,565 DEBUG "GET /files/mailbox/users.pyhunterpig/Inbox/6734/%E5%8F%97%E8%AE%BF%E9%A1%B5%E9%9D%A2_20120729-20120729.zip/@@@zopen.91email.chmod?alias=users.pyhunterpig HTTP/1.1" 200 0

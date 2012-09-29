@@ -1,0 +1,15 @@
+{{
+from json import dumps
+from bson import json_util
+
+res = dumps(res.to_Dict(), default=json_util.default)
+callback = request.GET.get('callback','')
+if callback:
+    res = callback.encode('utf8') + "(" + res + ");"
+    response.content_type = "text/javascript"
+elif not settings.GLOBAL.DEBUG:
+    response.content_type = "application/x-json"
+pass
+
+out.write(res, escape=False)
+}}

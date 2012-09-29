@@ -7,3 +7,7 @@ from uliweb import expose
 @expose
 def index():
     return {}
+
+@expose
+def officegeomaintain():
+    return {}
